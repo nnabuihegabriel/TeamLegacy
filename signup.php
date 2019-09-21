@@ -22,7 +22,7 @@
       <i class="fa fa-lock"></i>
       <h2 class="title">Sign Up</h2>
       <form class="" action="index.html" method="post">
-        <span class="error"><?php echo $_GET['m']; ?></span>
+        <span class="error"><?php if (isset($_GET['m'])){echo $_GET['m'];} ?></span>
         <p>
           <input type="mail" name="mail" value="" class="mail" placeholder="Email">
         </p>

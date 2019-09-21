@@ -23,7 +23,7 @@
       </span>
     </header>
     <div class="settings">
-      <p><?php echo $_GET['m']; ?></p>
+      <p><?php if (isset($_GET['m'])){echo $_GET['m'];} ?></p>
       <h2>User details</h2>
       <p>username: <?php echo $_SESSION['username']; ?></p>
     </div>

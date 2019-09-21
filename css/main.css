@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #e6e6e6;
+  color: #43383e;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 320px;
+  text-align: center;
+}
+
+.container input, .container button {
+  margin-top: 25px;
+}
+
+.title {
+  text-align: center;
+}
+
+.fa-lock {
+  font-size: 35px;
+}
+
+.username, .password, .mail {
+  font-family: Oswald-Medium;
+  font-size: 16px;
+  color: #43383e;
+  line-height: 1.2;
+  outline: none;
+  border: none;
+  position: relative;
+  display: block;
+  width: 95%;
+  height: 62px;
+  background: #fff;
+  border-radius: 31px;
+  padding: 0 35px 0 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: ease-out .3s;
+}
+
+form p {
+  position: relative;
+}
+
+.fa-eye-slash, .fa-eye {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 23px;
+  cursor: pointer;
+}
+
+.fa-eye-slash:hover, .fa-eye:hover {
+  color: #111;
+}
+
+.username:focus, .password:focus, .mail:focus {
+  width: 100%;
+}
+
+button.submit {
+  font-family: Oswald-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  outline: none;
+  border: none;
+  position: relative;
+  display: block;
+  min-width: 160px;
+  height: 62px;
+  background: #212121;
+  border-radius: 31px;
+  padding: 0 20px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: ease-out .3s;
+}
+
+button.submit:hover {
+  min-width: 170px;
+}
+
+.invalid {
+  color: red;
+  position: relative;
+}
+
+.invalid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 5px;
+  background-color: blue;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+header {
+  background-color: #212121;
+  position: relative;
+  color: #fff;
+  height: 50px;
+  padding: none;
+}
+
+header span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+span.logo {
+  left: 10%;
+}
+
+span.user-details {
+  right: 10%;
+}
+
+.other {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.other > a {
+  text-decoration-style: dotted;
+  color: inherit;
+  color: #43383e;
+}
+
+ @media (max-width: 375px) {
+   .username, .password {
+     width: 90%;
+     height: 57px;
+   }
+ }
